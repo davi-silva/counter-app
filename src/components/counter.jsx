@@ -54,13 +54,15 @@ class Counter extends Component {
     render() {
         return (
             <React.Fragment>
-                <button onClick={this.handleDecrement} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">Decrement</button>
-                <span style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</span>
-                <button onClick={() => this.handleIncrement({id: 1})} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">Increment</button>
-                <button onClick={this.handleReset} style={{ fontSize: 14 }} className="btn btn-danger btn-sm m-2">Reset</button>
-                <ul>
-                    {this.renderTags()}
-                </ul>
+                <header>
+                    <h3>Counter</h3>
+                </header>
+                <div className="m-2">
+                    <button onClick={this.handleDecrement} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">Decrement</button>
+                    <span style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</span>
+                    <button onClick={() => this.handleIncrement({id: 1})} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">Increment</button>
+                    <button onClick={this.handleReset} style={{ fontSize: 14 }} className="btn btn-danger btn-sm m-2">Reset</button>
+                </div>
             </React.Fragment>
         );
     }
@@ -70,3 +72,29 @@ class Counter extends Component {
 }
 
 export default Counter;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
