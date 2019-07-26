@@ -64,9 +64,9 @@ class NavigationBar extends Component {
                 <nav className='navigation-bar' style={this.styleNavigationBar}>
                     <div style={this.styleDiv} className='container-fluid'>
                         <h1 style={this.styleNavigationBarH1}>Counter</h1>
-                        <form>
+                        {/* <form>
                             <input type='text' style={this.styleNavBarSearchForm} />
-                        </form>
+                        </form> */}
                         <div className='nav-links' style={this.styleNavLinks}>
                             <Link style={this.styleNavLinks} to='/'>Home</Link>
                             <Link style={this.styleNavLinks} to='/products'>Products</Link>
