@@ -58,9 +58,9 @@ class Counter extends Component {
                     <h3>Counter</h3>
                 </header>
                 <div className="m-2">
-                    <button onClick={this.handleDecrement} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">Decrement</button>
+                    <button onClick={this.handleDecrement} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">-</button>
                     <span style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</span>
-                    <button onClick={() => this.handleIncrement({id: 1})} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">Increment</button>
+                    <button onClick={() => this.handleIncrement({id: 1})} style={{ fontSize: 14 }} className="btn btn-secondary btn-sm">+</button>
                     <button onClick={this.handleReset} style={{ fontSize: 14 }} className="btn btn-danger btn-sm m-2">Reset</button>
                 </div>
             </React.Fragment>
